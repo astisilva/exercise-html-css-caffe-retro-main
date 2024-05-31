@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+background-color: black;
+
+}
+
+main {
+  max-width: 1000px;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+nav {
+  background-color: #433f3f;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Spirax", sans-serif;
+  font-size: 2.2rem;
+  padding: 1rem;
+
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* nav a:hover {
+  
+
+}
+ */
+
+ #section-hot{
+  background-image: url("assets/hot.jpg");
+  width: 100%;
+ }
+
+ #section-juicy{
+
+  background-image: url("assets/juicy.jpg");
+ }
+
+ #section-cosy{
+  background-image: url("assets/cosy.jpg");
+
+
+ }
+
+ h2{
+  margin: 0;
+ }
+
+.price-list {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.price-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.price-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  color: #555;
+}
