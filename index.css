@@ -3,28 +3,29 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-background-color: black;
-
+  background-color: black;
+  color: white;
+  align-items: center;
 }
 
 main {
   max-width: 1000px;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
+  width: 100%;
 }
 
 nav {
-  background-color: #433f3f;
+  background-color: rgb(67, 63, 63, 0.8);
   margin: 0;
   display: flex;
   justify-content: center;
   font-family: "Spirax", sans-serif;
   font-size: 2.2rem;
   padding: 1rem;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
-
 
 nav ul {
   list-style: none;
@@ -44,35 +45,61 @@ nav a {
   font-weight: bold;
 }
 
-/* nav a:hover {
-  
-
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poiret One", sans-serif;
 }
- */
 
- #section-hot{
+#section-hot {
   background-image: url("assets/hot.jpg");
-  width: 100%;
- }
+  border-bottom: 0.6rem solid rgb(183, 53, 53);
+}
 
- #section-juicy{
-
+#section-juicy {
   background-image: url("assets/juicy.jpg");
- }
+  border-bottom: 0.6rem solid rgb(183, 53, 53);
+}
 
- #section-cosy{
+#section-cosy {
   background-image: url("assets/cosy.jpg");
+}
 
-
- }
-
- h2{
+h2 {
+  margin-top: 1rem;
   margin: 0;
- }
+  font-family: "Spirax", sans-serif;
+  font-size: 5.2rem;
+  color: rgb(183, 53, 53);
+  text-align: center;
+}
+
+p {
+  background-color: rgba(192, 58, 58, 0.9);
+  padding: 0.9rem 1.6rem;
+  max-width: 600px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p1 {
+  margin-left: 10%;
+}
+
+.p2 {
+  margin-left: 25%;
+}
 
 .price-list {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
+  font-size: 1.2rem;
+  width: 100%;
 }
 
 .price-list h1 {
@@ -82,14 +109,15 @@ nav a {
 
 .price-list ul {
   list-style: none;
-  padding: 0;
+  padding: 1rem 3rem 1rem 3rem;
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  /*  padding: 5px 0; */
 }
 
 .name {
@@ -98,5 +126,4 @@ nav a {
 
 .price {
   font-weight: bold;
-  color: #555;
 }
